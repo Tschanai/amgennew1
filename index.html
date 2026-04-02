@@ -1,965 +1,158 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amgen Schweiz – Wir kämpfen gegen die schwerwiegendsten Krankheiten der Welt</title>
-  <meta name="description" content="Amgen ist ein global führendes Biotechnologie-Unternehmen. In der Schweiz entwickeln wir innovative Therapien für schwere Erkrankungen." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="amgen-styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amgen Schweiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<!-- ════════════════════════════════
-     NOTICE BANNER
-════════════════════════════════ -->
-<div id="noticeBanner" class="notice-banner">
-  <p>
-    Informationen für Angehörige der Gesundheitsberufe und Patient:innen in der Schweiz &nbsp;·&nbsp;
-    <a href="https://www.amgenaepcextreporting.com/" data-external="https://www.amgenaepcextreporting.com/">
-      Adverse Event Reporting / Nebenwirkungsmeldung
-    </a>
-    &nbsp;·&nbsp;
-    <a href="https://www.amgen.ch/Uber-Amgen/kontakt">Kontakt</a>
-  </p>
-  <button id="noticeBannerClose" class="notice-close" aria-label="Schliessen">&#215;</button>
+<div class="notice-bar">
+  <span>Informationen für Gesundheitsberufe und Patient:innen in der Schweiz</span>
+  <span class="nb-sep">·</span>
+  <a href="https://www.amgenaepcextreporting.com/" class="ext-link">Adverse Event Reporting</a>
+  <span class="nb-sep">·</span>
+  <a href="#/kontakt">Produktreklamation</a>
 </div>
 
-<!-- ════════════════════════════════
-     HEADER
-════════════════════════════════ -->
-<header class="site-header" id="siteHeader">
-  <div class="header-inner">
-
-    <!-- Logo -->
-    <a href="https://www.amgen.ch/" class="site-logo">
-      <img
-        src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/logos/amgen-blue.svg?la=de-CH"
-        alt="Amgen Schweiz"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-      />
-      <!-- Fallback logo -->
-      <span style="display:none;align-items:center;gap:8px;">
-        <span style="background:var(--blue-mid);border-radius:8px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
-          <svg width="18" height="18" viewBox="0 0 22 22" fill="white"><path d="M11 2C6.03 2 2 6.03 2 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 2c3.86 0 7 3.14 7 7 0 1.93-.78 3.68-2.05 4.95L6.05 7.05C7.32 5.78 9.07 4 11 4zm0 14c-3.86 0-7-3.14-7-7 0-1.93.78-3.68 2.05-4.95l9.9 9.9C14.68 17.22 12.93 18 11 18z"/></svg>
-        </span>
-        <strong style="font-size:20px;font-weight:900;color:var(--blue-deep);">Amgen</strong>
-      </span>
+<header id="hdr">
+  <div class="hdr-inner">
+    <a href="#/" class="logo">
+      <img src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/logos/amgen-blue.svg" alt="Amgen" height="32">
     </a>
-
-    <!-- Primary Nav -->
-    <ul class="primary-nav">
-
-      <!-- Über Amgen -->
-      <li>
-        <a href="https://www.amgen.ch/Uber-Amgen">
-          Über Amgen
-          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </a>
-        <div class="dropdown">
-          <a href="https://www.amgen.ch/Uber-Amgen">
-            <div class="dd-title">Über Amgen</div>
-            <div class="dd-desc">Geschichte und Einfluss von Amgen – einem Pionier der Biotechnologie</div>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="https://www.amgen.ch/Uber-Amgen/Unternehmensgeschichte">
-            <div class="dd-title">Unternehmensgeschichte</div>
-            <div class="dd-desc">Über 40 Jahre bahnbrechende Innovationen</div>
-          </a>
-          <a href="https://www.amgen.ch/Uber-Amgen/Mission-und-Werte">
-            <div class="dd-title">Mission und Werte</div>
-            <div class="dd-desc">Ethik, Teamarbeit und Qualität als Grundlage</div>
-          </a>
-          <a href="https://www.amgen.ch/Uber-Amgen/Management-Team">
-            <div class="dd-title">Management Team</div>
-            <div class="dd-desc">Die Führungskräfte von Amgen Schweiz</div>
-          </a>
-          <a href="https://www.amgen.ch/Uber-Amgen/Transparenz">
-            <div class="dd-title">Transparenz</div>
-            <div class="dd-desc">Offenlegung von Zuwendungen an Gesundheitspersonal</div>
-          </a>
-          <a href="https://www.amgen.ch/Uber-Amgen/Unsere-Medikamente">
-            <div class="dd-title">Unsere Medikamente</div>
-            <div class="dd-desc">Innovative Therapien für schwere Erkrankungen</div>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="https://www.amgen.ch/Uber-Amgen/kontakt">
-            <div class="dd-title">Kontakt</div>
-            <div class="dd-desc">Meldungen, Anfragen und Kundendienst</div>
-          </a>
-          <a href="https://www.amgenaepcextreporting.com/" data-external="https://www.amgenaepcextreporting.com/">
-            <div class="dd-title" style="color:var(--blue-bright);">Adverse Event Reporting ↗</div>
-            <div class="dd-desc">Nebenwirkungen direkt melden</div>
-          </a>
-        </div>
-      </li>
-
-      <!-- Wissenschaft -->
-      <li>
-        <a href="https://www.amgen.ch/Wissenschaft">
-          Wissenschaft
-          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </a>
-        <div class="dropdown">
-          <a href="https://www.amgen.ch/Wissenschaft">
-            <div class="dd-title">Wissenschaft</div>
-            <div class="dd-desc">Biotechnologie-Innovationen, die die Medizin der Zukunft gestalten</div>
-          </a>
-          <a href="https://www.amgen.ch/Wissenschaft/biosimilars">
-            <div class="dd-title">Biosimilars</div>
-            <div class="dd-desc">Über 40 Jahre Expertise in der Biosimilar-Entwicklung</div>
-          </a>
-        </div>
-      </li>
-
-      <!-- Therapiegebiete -->
-      <li>
-        <a href="https://www.amgen.ch/Therapiegebiete">
-          Therapiegebiete
-          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </a>
-        <div class="dropdown">
-          <a href="https://www.amgen.ch/Therapiegebiete/onkologie">
-            <div class="dd-title">Onkologie</div>
-            <div class="dd-desc">Bahnbrechende Ansätze in der Krebsbehandlung</div>
-          </a>
-          <a href="https://www.amgen.ch/Therapiegebiete/Chronisch-entzundliche-Erkrankungen">
-            <div class="dd-title">Chronisch-entzündliche Erkrankungen</div>
-            <div class="dd-desc">Innovative Therapien gegen Autoimmunerkrankungen</div>
-          </a>
-          <a href="https://www.amgen.ch/Therapiegebiete/seltene-erkrankungen">
-            <div class="dd-title">Seltene Erkrankungen</div>
-            <div class="dd-desc">Gezielte Therapien für über 500'000 Betroffene in der CH</div>
-          </a>
-          <a href="https://www.amgen.ch/Therapiegebiete/Knochengesundheit">
-            <div class="dd-title">Knochengesundheit</div>
-            <div class="dd-desc">Forschung zur Verringerung des Frakturrisikos</div>
-          </a>
-          <a href="https://www.amgen.ch/Therapiegebiete/Kardiologie">
-            <div class="dd-title">Kardiologie</div>
-            <div class="dd-desc">Lösungen gegen Herz-Kreislauf-Erkrankungen</div>
-          </a>
-        </div>
-      </li>
-
-      <!-- Verantwortung -->
-      <li>
-        <a href="https://www.amgen.ch/Verantwortung">
-          Verantwortung
-          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </a>
-        <div class="dropdown">
-          <a href="https://www.amgen.ch/Verantwortung">
-            <div class="dd-title">Verantwortung</div>
-            <div class="dd-desc">Stiftungen, Umweltinitiativen und ethische Massstäbe</div>
-          </a>
-          <a href="https://www.amgen.ch/Verantwortung/sustainability">
-            <div class="dd-title">Unsere Verantwortung</div>
-            <div class="dd-desc">Nachhaltigkeit und gesellschaftliches Engagement</div>
-          </a>
-          <a href="https://www.amgen.ch/Verantwortung/Amgen-Foundation">
-            <div class="dd-title">Amgen Foundation</div>
-            <div class="dd-desc">Wissenschaftliche Bildung für die nächste Generation</div>
-          </a>
-          <a href="https://www.amgen.ch/Verantwortung/Preise-und-Auszeichnungen">
-            <div class="dd-title">Preise und Auszeichnungen</div>
-            <div class="dd-desc">Anerkennung für Exzellenz und Innovation</div>
-          </a>
-        </div>
-      </li>
-
-      <li><a href="https://www.amgen.ch/stories">Stories</a></li>
-      <li><a href="https://www.amgen.ch/Pressematerial">Pressematerial</a></li>
-      <li><a href="https://www.amgen.ch/karriere">Karriere</a></li>
-    </ul>
-
-    <!-- Right side -->
-    <div class="header-right">
-      <div class="header-social">
-        <a href="https://www.linkedin.com/company/amgen/" data-external="https://www.linkedin.com/company/amgen/" title="LinkedIn" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--blue-deep)"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="http://www.twitter.com/amgen" data-external="http://www.twitter.com/amgen" title="X / Twitter" aria-label="X Twitter">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--blue-deep)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 5.891zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="https://www.youtube.com/user/Amgen" data-external="https://www.youtube.com/user/Amgen" title="YouTube" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--blue-deep)"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/amgenbiotech/" data-external="https://www.facebook.com/amgenbiotech/" title="Facebook" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--blue-deep)"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/amgenbiotech/" data-external="https://www.instagram.com/amgenbiotech/" title="Instagram" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--blue-deep)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li class="has-dd">
+          <button class="nav-btn">Über Amgen<svg class="chev" viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></button>
+          <div class="dd">
+            <a href="#/uber-amgen" class="dd-item"><span class="ddl">Über Amgen</span><span class="ddd">Geschichte und Einfluss eines Biotechnologie-Pioniers</span></a>
+            <a href="#/unternehmensgeschichte" class="dd-item"><span class="ddl">Unternehmensgeschichte</span><span class="ddd">40+ Jahre bahnbrechende Innovationen</span></a>
+            <a href="#/mission-werte" class="dd-item"><span class="ddl">Mission und Werte</span><span class="ddd">Ethik, Teamarbeit und Qualität</span></a>
+            <a href="#/management-team" class="dd-item"><span class="ddl">Management Team</span><span class="ddd">Führungskräfte von Amgen Schweiz</span></a>
+            <a href="#/transparenz" class="dd-item"><span class="ddl">Transparenz</span><span class="ddd">Offenlegung von Zuwendungen</span></a>
+            <a href="#/unsere-medikamente" class="dd-item"><span class="ddl">Unsere Medikamente</span><span class="ddd">Verschreibungspflichtige Arzneimittel</span></a>
+            <a href="#/kontakt" class="dd-item"><span class="ddl">Kontakt</span><span class="ddd">Fragen, Meldungen, Anfragen</span></a>
+            <a href="https://www.amgenaepcextreporting.com/" class="dd-item ext-link"><span class="ddl">Adverse Event Reporting ↗</span><span class="ddd">Nebenwirkungen melden</span></a>
+          </div>
+        </li>
+        <li class="has-dd">
+          <button class="nav-btn">Wissenschaft<svg class="chev" viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></button>
+          <div class="dd">
+            <a href="#/wissenschaft" class="dd-item"><span class="ddl">Wissenschaft</span><span class="ddd">Biotechnologie-Innovationen und Zukunft der Medizin</span></a>
+            <a href="#/biosimilars" class="dd-item"><span class="ddl">Biosimilars</span><span class="ddd">40+ Jahre Expertise in der Biotechnologie</span></a>
+          </div>
+        </li>
+        <li class="has-dd">
+          <button class="nav-btn">Therapiegebiete<svg class="chev" viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></button>
+          <div class="dd">
+            <a href="#/onkologie" class="dd-item"><span class="ddl">Onkologie</span><span class="ddd">Innovative Krebsbehandlung</span></a>
+            <a href="#/entzuendliche-erkrankungen" class="dd-item"><span class="ddl">Chronisch-entzündliche Erkrankungen</span><span class="ddd">Autoimmunerkrankungen</span></a>
+            <a href="#/seltene-erkrankungen" class="dd-item"><span class="ddl">Seltene Erkrankungen</span><span class="ddd">500'000+ Betroffene in der Schweiz</span></a>
+            <a href="#/knochengesundheit" class="dd-item"><span class="ddl">Knochengesundheit</span><span class="ddd">Forschung gegen Osteoporose</span></a>
+            <a href="#/kardiologie" class="dd-item"><span class="ddl">Kardiologie</span><span class="ddd">Herz-Kreislauf-Erkrankungen</span></a>
+          </div>
+        </li>
+        <li class="has-dd">
+          <button class="nav-btn">Verantwortung<svg class="chev" viewBox="0 0 16 16"><polyline points="3 6 8 11 13 6"/></svg></button>
+          <div class="dd">
+            <a href="#/verantwortung" class="dd-item"><span class="ddl">Verantwortung</span><span class="ddd">Stiftungen, Umwelt, Ethik</span></a>
+            <a href="#/nachhaltigkeit" class="dd-item"><span class="ddl">Unsere Verantwortung</span><span class="ddd">Engagement über Medikamente hinaus</span></a>
+            <a href="#/amgen-foundation" class="dd-item"><span class="ddl">Amgen Foundation</span><span class="ddd">Wissenschaftliche Bildung fördern</span></a>
+            <a href="#/preise-auszeichnungen" class="dd-item"><span class="ddl">Preise und Auszeichnungen</span><span class="ddd">Employer-Branding</span></a>
+          </div>
+        </li>
+        <li><a href="#/stories" class="nav-link">Stories</a></li>
+        <li><a href="#/pressematerial" class="nav-link">Presse</a></li>
+        <li><a href="#/karriere" class="nav-link">Karriere</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-actions">
+      <div class="soc-row">
+        <a href="https://www.linkedin.com/company/amgen/" class="soc-btn ext-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="http://www.twitter.com/amgen" class="soc-btn ext-link" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://www.youtube.com/user/Amgen" class="soc-btn ext-link" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+        <a href="https://www.instagram.com/amgenbiotech/" class="soc-btn ext-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4" fill="white"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg></a>
       </div>
-
-      <a href="https://wwwext.amgen.com/amgen-worldwide" data-external="https://wwwext.amgen.com/amgen-worldwide" class="btn-worldwide">
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        Worldwide
-      </a>
-
-      <button id="searchToggle" class="btn-search-toggle" aria-label="Suche öffnen">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
-          <circle cx="11" cy="11" r="7"/>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- Search Bar -->
-  <div id="searchBar" class="search-bar">
-    <div class="search-bar-inner">
-      <input type="search" id="searchInput" placeholder="Suchen Sie nach Therapien, Medikamenten, Karriere…" autocomplete="off" />
-      <button class="btn-search-go">Suchen</button>
+      <button id="search-btn" class="icon-btn" aria-label="Suche"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <a href="https://wwwext.amgen.com/amgen-worldwide" class="icon-btn ext-link" aria-label="Worldwide"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a>
+      <a href="#/kontakt" class="cta-btn">Kontakt</a>
     </div>
   </div>
 </header>
 
-<!-- ════════════════════════════════
-     HERO
-════════════════════════════════ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-content fade-in">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Amgen Schweiz · Rotkreuz, Zug
-      </div>
+<main id="page" role="main"></main>
 
-      <h1 class="hero-title">
-        Wir kämpfen gegen die<br>
-        <em>schwerwiegendsten</em><br>
-        Krankheiten der Welt
-      </h1>
-
-      <p class="hero-desc">
-        Die Mission von Amgen ist es, Patient:innen wirklich helfen zu können –
-        durch innovative biologische Arzneimittel, wegweisende Wissenschaft
-        und über 40 Jahre Pionierarbeit in der Biotechnologie.
-      </p>
-
-      <div class="hero-actions">
-        <a href="https://www.amgen.ch/Uber-Amgen/Unsere-Medikamente" class="btn-primary">
-          Unsere Medikamente
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="https://www.amgen.ch/Uber-Amgen" class="btn-outline-white">
-          Über Amgen erfahren
-        </a>
-      </div>
-
-      <div class="hero-stats">
-        <div>
-          <div class="stat-num">40<sup>+</sup></div>
-          <div class="stat-label">Jahre Biotechnologie</div>
-        </div>
-        <div>
-          <div class="stat-num">~200</div>
-          <div class="stat-label">Mitarbeitende in CH</div>
-        </div>
-        <div>
-          <div class="stat-num">100<sup>+</sup></div>
-          <div class="stat-label">Länder weltweit</div>
+<footer id="site-footer">
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/logos/d-amgen-logo.svg" alt="Amgen" height="24" class="ft-logo">
+        <p class="ft-tagline">Wir kämpfen gegen die schwerwiegendsten Krankheiten der Welt – durch Wissenschaft, Innovation und das Engagement unserer Menschen.</p>
+        <div class="ft-soc">
+          <a href="https://www.linkedin.com/company/amgen/" class="ext-link"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="http://www.twitter.com/amgen" class="ext-link"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.youtube.com/user/Amgen" class="ext-link"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+          <a href="https://www.facebook.com/amgenbiotech/" class="ext-link"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/amgenbiotech/" class="ext-link"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4" fill="white"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg></a>
         </div>
       </div>
+      <div class="ft-col"><div class="ft-ct">Unternehmen</div><ul><li><a href="#/uber-amgen">Über Amgen</a></li><li><a href="#/unternehmensgeschichte">Geschichte</a></li><li><a href="#/mission-werte">Mission &amp; Werte</a></li><li><a href="#/management-team">Management</a></li><li><a href="#/transparenz">Transparenz</a></li><li><a href="#/pressematerial">Pressematerial</a></li></ul></div>
+      <div class="ft-col"><div class="ft-ct">Medizin &amp; Forschung</div><ul><li><a href="#/wissenschaft">Wissenschaft</a></li><li><a href="#/biosimilars">Biosimilars</a></li><li><a href="#/unsere-medikamente">Medikamente</a></li><li><a href="#/onkologie">Onkologie</a></li><li><a href="#/kardiologie">Kardiologie</a></li><li><a href="#/seltene-erkrankungen">Seltene Erkrankungen</a></li></ul></div>
+      <div class="ft-col"><div class="ft-ct">Engagement &amp; Karriere</div><ul><li><a href="#/verantwortung">Verantwortung</a></li><li><a href="#/amgen-foundation">Amgen Foundation</a></li><li><a href="#/preise-auszeichnungen">Auszeichnungen</a></li><li><a href="#/stories">Stories</a></li><li><a href="#/karriere">Karriere</a></li><li><a href="https://wwwext.amgen.com/amgen-worldwide" class="ext-link">Worldwide ↗</a></li></ul></div>
     </div>
-
-    <div class="hero-visual fade-in fade-in-delay-2">
-      <div class="hero-img-card">
-        <img
-          src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/1/Our-Company_Amgen-in-Rotkreuz.png?h=485&iar=0&w=460"
-          alt="Amgen Hauptsitz Rotkreuz, Zug"
-          onerror="this.parentElement.innerHTML='<div class=\'hero-img-fallback\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><path d=\'M3 9h18M9 21V9\'/></svg></div>'"
-        />
-        <p class="hero-img-caption">Amgen Campus · Suurstoffi 22, Rotkreuz</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     MISSION & WERTE
-════════════════════════════════ -->
-<section class="section mission-section">
-  <div class="section-inner">
-    <div class="mission-grid">
-      <div class="mission-text fade-in">
-        <span class="eyebrow">Mission &amp; Werte</span>
-        <h2 class="section-title">Amgen macht den Unterschied: unsere Menschen, unsere Werte</h2>
-        <p class="section-desc">
-          Wie wir täglich arbeiten, wie wir mit anderen zusammenarbeiten,
-          wie wir Entscheidungen treffen – all das ist stark durch die Amgen-Werte geprägt.
-        </p>
-        <p class="mission-body-text">
-          Amgen ist ein global führendes unabhängiges Biotechnologie-Unternehmen,
-          das 1980 gegründet wurde und heute mit etwa 28'000 Mitarbeitenden in rund
-          100 Ländern vertreten ist. Unser Ziel: das weltweit beste Biotechnologieunternehmen
-          zu sein – weder Mittelmass noch Durchschnitt, sondern die Besten.
-        </p>
-        <a href="https://www.amgen.ch/Uber-Amgen/Mission-und-Werte" class="btn-blue">
-          Mehr über unsere Werte
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
-
-      <div class="values-list fade-in fade-in-delay-1">
-        <div class="value-card">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/>
-            </svg>
-          </div>
-          <div>
-            <div class="value-name">Wissenschaft ist unsere Basis</div>
-            <div class="value-text">Wir stützen uns auf Daten und beleuchten schwierige Fragestellungen analytisch.</div>
-          </div>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
-            </svg>
-          </div>
-          <div>
-            <div class="value-name">Wettbewerb &amp; Erfolg</div>
-            <div class="value-text">Wir motivieren einander – auf respektvolle Weise für die beste Leistung.</div>
-          </div>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <div>
-            <div class="value-name">Werte für alle schaffen</div>
-            <div class="value-text">Mehrwert für Patient:innen, Mitarbeitende und Aktionär:innen.</div>
-          </div>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <div>
-            <div class="value-name">Ethisches Handeln</div>
-            <div class="value-text">Compliance und Ethik sind keine Option, sondern unverzichtbare Grundlage.</div>
-          </div>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
-            </svg>
-          </div>
-          <div>
-            <div class="value-name">Teamarbeit &amp; Vertrauen</div>
-            <div class="value-text">Kooperation, Kommunikation und Verantwortung – länderübergreifend.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     THERAPIEGEBIETE
-════════════════════════════════ -->
-<section class="section therapy-section">
-  <div class="section-inner">
-    <div class="text-center mb-52 fade-in">
-      <span class="eyebrow">Unsere Forschung</span>
-      <h2 class="section-title">Therapiegebiete</h2>
-      <p class="section-desc" style="margin:0 auto;">
-        Amgens Medikamente zielen auf schwerwiegende Krankheiten ab – vor allem auf solche,
-        für die es bislang wenige Behandlungsmöglichkeiten gibt.
-      </p>
-    </div>
-    <div class="therapy-grid fade-in">
-      <a href="https://www.amgen.ch/Therapiegebiete/onkologie" class="therapy-card">
-        <div class="therapy-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-          </svg>
-        </div>
-        <div class="therapy-name">Onkologie</div>
-        <div class="therapy-sub">Innovative Krebstherapien &amp; Hämatologie</div>
-      </a>
-      <a href="https://www.amgen.ch/Therapiegebiete/Chronisch-entzundliche-Erkrankungen" class="therapy-card">
-        <div class="therapy-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-        </div>
-        <div class="therapy-name">Chronisch-entzündliche Erkrankungen</div>
-        <div class="therapy-sub">Arthritis, Psoriasis &amp; mehr</div>
-      </a>
-      <a href="https://www.amgen.ch/Therapiegebiete/seltene-erkrankungen" class="therapy-card">
-        <div class="therapy-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-          </svg>
-        </div>
-        <div class="therapy-name">Seltene Erkrankungen</div>
-        <div class="therapy-sub">500'000+ Betroffene in der Schweiz</div>
-      </a>
-      <a href="https://www.amgen.ch/Therapiegebiete/Knochengesundheit" class="therapy-card">
-        <div class="therapy-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M18 20V10M12 20V4M6 20v-6"/>
-          </svg>
-        </div>
-        <div class="therapy-name">Knochengesundheit</div>
-        <div class="therapy-sub">Osteoporose &amp; Frakturprävention</div>
-      </a>
-      <a href="https://www.amgen.ch/Therapiegebiete/Kardiologie" class="therapy-card">
-        <div class="therapy-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-          </svg>
-        </div>
-        <div class="therapy-name">Kardiologie</div>
-        <div class="therapy-sub">Herz-Kreislauf-Forschung</div>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:40px;" class="fade-in">
-      <a href="https://www.amgen.ch/Therapiegebiete" class="btn-ghost-dark">
-        Alle Therapiegebiete ansehen
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     STORIES & NEWS
-════════════════════════════════ -->
-<section class="section stories-section">
-  <div class="section-inner">
-    <div class="section-header-row fade-in">
-      <div>
-        <span class="eyebrow">Aktuelles</span>
-        <h2 class="section-title">Stories &amp; News</h2>
-      </div>
-      <a href="https://www.amgen.ch/stories" class="btn-ghost-white">
-        Alle Stories
-        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-
-    <!-- Featured row -->
-    <div class="stories-grid fade-in">
-      <a href="https://www.amgen.ch/stories/2025/11/wissenschaft-neu-denken" class="story-card story-card--featured">
-        <div class="story-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/AMG_IMG_Amgen_Banner_thumbnail.png"
-            alt="Wissenschaft neu denken"
-            onerror="this.parentElement.classList.add('story-img-placeholder');this.remove()"
-          />
-        </div>
-        <div class="story-body">
-          <span class="story-tag">Innovation</span>
-          <div class="story-date">25.11.2025</div>
-          <div class="story-title">Wissenschaft neu denken – Innovation für Patient:innen</div>
-        </div>
-      </a>
-      <a href="https://www.amgen.ch/stories/2025/09/Impact-mit-Herz-Unser-Amgen-Impact-Day-bei-Murimoos" class="story-card">
-        <div class="story-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/Die_zwei_amgen_teams_thumbnail.jpg"
-            alt="Impact Day Murimoos"
-            onerror="this.parentElement.classList.add('story-img-placeholder');this.remove()"
-          />
-        </div>
-        <div class="story-body">
-          <span class="story-tag">Community</span>
-          <div class="story-date">29.09.2025</div>
-          <div class="story-title">Impact mit Herz: Unser Amgen Impact Day bei Murimoos</div>
-        </div>
-      </a>
-      <a href="https://www.amgen.ch/stories/2025/06/Cholesterin-Eine-stille-Gefahr-fur-Herz-und-Gefasse-eine-nationale-Aufklarungskampagne-macht-aufmerksam" class="story-card">
-        <div class="story-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/stories/Visual-der-Aufklrungskampagne_thumbnail.jpg"
-            alt="Cholesterin Kampagne"
-            onerror="this.parentElement.classList.add('story-img-placeholder');this.remove()"
-          />
-        </div>
-        <div class="story-body">
-          <span class="story-tag">Kardiologie</span>
-          <div class="story-date">05.06.2025</div>
-          <div class="story-title">Cholesterin: Eine stille Gefahr – nationale Aufklärungskampagne</div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Second row -->
-    <div class="stories-row2 fade-in" style="margin-top:18px;">
-      <a href="https://www.amgen.ch/stories/2025/05/Amgen-in-der-Schweiz-erneut-als-Great-Place-To-Work-ausgezeichnet" class="story-card story-card--horizontal">
-        <div class="story-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/banners/stories/GPTW_Preisverleihung_2025_thumbnail.png"
-            alt="Great Place To Work 2025"
-            onerror="this.parentElement.classList.add('story-img-placeholder');this.remove()"
-          />
-        </div>
-        <div class="story-body">
-          <div class="story-date">19.05.2025</div>
-          <div class="story-title">Amgen erneut als Great Place To Work ausgezeichnet</div>
-        </div>
-      </a>
-      <a href="https://www.amgen.ch/stories/2025/04/BiTE-Molekule-Europas-Beitrag-zur-Krebstherapie-der-Zukunft" class="story-card story-card--horizontal">
-        <div class="story-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/stories/BiTE-Molekule-image.png"
-            alt="BiTE Moleküle"
-            onerror="this.parentElement.classList.add('story-img-placeholder');this.remove()"
-          />
-        </div>
-        <div class="story-body">
-          <div class="story-date">11.04.2025</div>
-          <div class="story-title">BiTE® Moleküle – Europas Beitrag zur Krebstherapie der Zukunft</div>
-        </div>
-      </a>
-      <a href="https://www.amgen.ch/stories/2024/11/Myriam-DeLeone-im-TV-Wie-Kunstliche-Intelligenz-die-Medikamentenentwicklung-revolutioniert" class="story-card story-card--horizontal">
-        <div class="story-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/stories/Swiss-GM-Myriam-DeLeone-after-having-given-an_Sonja-Luz-thumbnail.jpg"
-            alt="Myriam DeLeone KI"
-            onerror="this.parentElement.classList.add('story-img-placeholder');this.remove()"
-          />
-        </div>
-        <div class="story-body">
-          <div class="story-date">23.11.2024</div>
-          <div class="story-title">Wie Künstliche Intelligenz die Medikamentenentwicklung revolutioniert</div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     OVERVIEW TILES
-════════════════════════════════ -->
-<section class="section tiles-section">
-  <div class="section-inner">
-    <div class="text-center mb-52 fade-in">
-      <span class="eyebrow">Was wir tun</span>
-      <h2 class="section-title">Alles auf einen Blick</h2>
-    </div>
-    <div class="tiles-grid">
-
-      <a href="https://www.amgen.ch/Uber-Amgen" class="tile-card fade-in">
-        <div class="tile-img" style="background:linear-gradient(135deg,#001F5B,#0047BB)">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/1/Amgen-in-Rotkreuz-6,-d-,-Stock-Cafeteria.jpg?h=485&iar=0&w=460"
-            alt="Amgen Gebäude Rotkreuz"
-            onerror="this.parentElement.innerHTML='<div class=\'tile-img-placeholder\' style=\'background:linear-gradient(135deg,#001F5B,#0047BB)\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><path d=\'M3 9h18M9 21V9\'/></svg></div>'"
-          />
-          <div class="tile-img-overlay"></div>
-        </div>
-        <div class="tile-body">
-          <div class="tile-category">Über Amgen</div>
-          <div class="tile-title">Ein wertebasiertes Biotechnologieunternehmen</div>
-          <div class="tile-desc">Wir sind tief in Wissenschaft und Innovation verwurzelt – so können wir Medikamente für Patient:innen mit schweren Krankheiten entwickeln.</div>
-          <div class="tile-link">
-            Mehr erfahren
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.amgen.ch/Wissenschaft" class="tile-card fade-in fade-in-delay-1">
-        <div class="tile-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/tiles/our-science.jpg?h=481&iar=0&w=456"
-            alt="Nervenzellen Forschung"
-            onerror="this.parentElement.innerHTML='<div class=\'tile-img-placeholder\' style=\'background:linear-gradient(135deg,#003366,#0066CC)\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'12\' r=\'4\'/><path d=\'M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41\'/></svg></div>'"
-          />
-          <div class="tile-img-overlay"></div>
-        </div>
-        <div class="tile-body">
-          <div class="tile-category">Unsere Forschung</div>
-          <div class="tile-title">Lebende Zellen als Grundlage biologischer Medikamente</div>
-          <div class="tile-desc">Unsere Forschung beschäftigt sich mit dem Einsatz lebender Zellen zur Herstellung biologischer Arzneimittel.</div>
-          <div class="tile-link">
-            Mehr erfahren
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.amgen.ch/Uber-Amgen/Unsere-Medikamente" class="tile-card fade-in fade-in-delay-2">
-        <div class="tile-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/tiles/our-patients.jpg?h=481&iar=0&w=456"
-            alt="Amgen Produktion"
-            onerror="this.parentElement.innerHTML='<div class=\'tile-img-placeholder\' style=\'background:linear-gradient(135deg,#002244,#00A3E0)\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><path d=\'M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\'/><polyline points=\'9 22 9 12 15 12 15 22\'/></svg></div>'"
-          />
-          <div class="tile-img-overlay"></div>
-        </div>
-        <div class="tile-body">
-          <div class="tile-category">Unsere Medikamente</div>
-          <div class="tile-title">Therapien für schwerwiegende Erkrankungen</div>
-          <div class="tile-desc">Unsere Medikamente zielen auf schwerwiegende Krankheiten ab – vor allem auf solche, für die es bislang wenige Behandlungsmöglichkeiten gibt.</div>
-          <div class="tile-link">
-            Mehr erfahren
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.amgen.ch/Verantwortung" class="tile-card fade-in">
-        <div class="tile-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/tiles/our-medicines.jpg?h=481&iar=0&w=456"
-            alt="Amgen Verantwortung"
-            onerror="this.parentElement.innerHTML='<div class=\'tile-img-placeholder\' style=\'background:linear-gradient(135deg,#001833,#004488)\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'2\' y1=\'12\' x2=\'22\' y2=\'12\'/><path d=\'M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\'/></svg></div>'"
-          />
-          <div class="tile-img-overlay"></div>
-        </div>
-        <div class="tile-body">
-          <div class="tile-category">Unsere Verantwortung</div>
-          <div class="tile-title">Positiver Einfluss über die Medizin hinaus</div>
-          <div class="tile-desc">Unsere Verantwortung sehen wir darin, einen positiven Einfluss auf das Leben weltweit zu haben – über die Herstellung lebenswichtiger Medikamente hinaus.</div>
-          <div class="tile-link">
-            Mehr erfahren
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.amgen.ch/Uber-Amgen/kontakt" class="tile-card fade-in fade-in-delay-1">
-        <div class="tile-img" style="background:linear-gradient(135deg,#002255,#0055AA)">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/1/Our-Company_Amgen-in-Rotkreuz.png?h=485&iar=0&w=460"
-            alt="Amgen Kontakt"
-            onerror="this.parentElement.innerHTML='<div class=\'tile-img-placeholder\' style=\'background:linear-gradient(135deg,#002255,#0055AA)\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><path d=\'M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 18.18v-1.26z\'/></svg></div>'"
-          />
-          <div class="tile-img-overlay"></div>
-        </div>
-        <div class="tile-body">
-          <div class="tile-category">Kontakt</div>
-          <div class="tile-title">Fragen, Meldungen &amp; Anfragen</div>
-          <div class="tile-desc">Hier können Sie uns kontaktieren, wenn Sie eine Frage haben, eine Nebenwirkung oder eine Reklamation melden möchten.</div>
-          <div class="tile-link">
-            Kontaktieren
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.amgen.ch/karriere" class="tile-card fade-in fade-in-delay-2">
-        <div class="tile-img">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/AMG_IMG_Inspired-with-cup-of-fresh-coffee.png?h=485&iar=0&w=460"
-            alt="Karriere Amgen"
-            onerror="this.parentElement.innerHTML='<div class=\'tile-img-placeholder\' style=\'background:linear-gradient(135deg,#001A44,#003377)\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><rect x=\'2\' y=\'7\' width=\'20\' height=\'14\' rx=\'2\' ry=\'2\'/><path d=\'M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\'/></svg></div>'"
-          />
-          <div class="tile-img-overlay"></div>
-        </div>
-        <div class="tile-body">
-          <div class="tile-category">Karriere</div>
-          <div class="tile-title">Arbeiten bei Amgen Schweiz</div>
-          <div class="tile-desc">Entdecken Sie Karrieremöglichkeiten in unserem preisgekrönten Team in Rotkreuz – über 20 Nationalitäten und flexibles Arbeiten.</div>
-          <div class="tile-link">
-            Stellen ansehen
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     VERANTWORTUNG
-════════════════════════════════ -->
-<section class="section resp-section">
-  <div class="section-inner">
-    <div class="resp-grid">
-      <div class="fade-in">
-        <div class="resp-visual">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/1/Amgen-in-Rotkreuz-6,-d-,-Stock-Cafeteria.jpg?h=485&iar=0&w=460"
-            alt="Amgen Verantwortung"
-            onerror="this.parentElement.innerHTML='<div class=\'resp-fallback\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.2\'><path d=\'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\'/></svg><h3>Unsere Verantwortung</h3><p>Patient:innen zu helfen steht bei Amgen im Mittelpunkt. Doch unser Engagement geht weit über die Herstellung lebenswichtiger Medikamente hinaus.</p><div class=\'resp-badges\'><span class=\'badge\'>Great Place to Work 2025</span><span class=\'badge\'>ESG Committed</span><span class=\'badge\'>Amgen Foundation</span></div></div>'"
-          />
-          <div class="resp-visual-overlay">
-            <h3>Unser Engagement für die Schweiz</h3>
-            <p>Amgen Schweiz – in Rotkreuz, Zug – engagiert sich für Wissenschaft, Gemeinschaft und Nachhaltigkeit.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-in fade-in-delay-1">
-        <span class="eyebrow">Nachhaltigkeit &amp; Verantwortung</span>
-        <h2 class="section-title">Mehr als Medizin</h2>
-        <p class="section-desc" style="margin-bottom:36px;">
-          Amgen engagiert sich durch Stiftungen, Umweltinitiativen und ethische Massstäbe
-          für eine positive Veränderung – in der Schweiz und weltweit.
-        </p>
-        <div class="resp-pillars">
-          <div class="pillar">
-            <div class="pillar-num">01</div>
-            <div>
-              <div class="pillar-title">Amgen Foundation</div>
-              <div class="pillar-desc">Fördert wissenschaftliche Bildung, um die nächste Generation von Innovator:innen zu inspirieren und Gemeinschaften zu stärken.</div>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-num">02</div>
-            <div>
-              <div class="pillar-title">Umwelt &amp; Nachhaltigkeit</div>
-              <div class="pillar-desc">Investitionen in umweltfreundliche Prozesse und Technologien für nachhaltige Produktion und geringeren ökologischen Fussabdruck.</div>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-num">03</div>
-            <div>
-              <div class="pillar-title">Great Place To Work 2025</div>
-              <div class="pillar-desc">Amgen Schweiz wurde 2025 erneut als herausragendes Unternehmen ausgezeichnet – 2. Platz bei Great Place To Work.</div>
-            </div>
-          </div>
-        </div>
-        <a href="https://www.amgen.ch/Verantwortung" class="btn-blue" style="margin-top:32px;">
-          Mehr zu unserer Verantwortung
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     KARRIERE
-════════════════════════════════ -->
-<section class="section career-section">
-  <div class="section-inner">
-    <div class="career-grid">
-      <div class="fade-in">
-        <span class="eyebrow">Karriere bei Amgen</span>
-        <h2 class="section-title">Wirkung schaffen – täglich</h2>
-        <p class="career-desc">
-          Wir sind in Rotkreuz, Zug – einem der innovativsten Biotechnologie-Standorte Europas.
-          Über 20 Nationalitäten arbeiten hier Hand in Hand für Patient:innen weltweit.
-        </p>
-        <div class="career-stats">
-          <div class="career-stat">
-            <div class="career-stat-val">20+</div>
-            <div class="career-stat-label">Nationalitäten im Team</div>
-          </div>
-          <div class="career-stat">
-            <div class="career-stat-val">Hybrid</div>
-            <div class="career-stat-label">Flexibles Arbeitsmodell</div>
-          </div>
-          <div class="career-stat">
-            <div class="career-stat-val">Top 3</div>
-            <div class="career-stat-label">GPTW Schweiz 2025</div>
-          </div>
-          <div class="career-stat">
-            <div class="career-stat-val">~200</div>
-            <div class="career-stat-label">Mitarbeitende in CH</div>
-          </div>
-        </div>
-        <a href="https://www.amgen.ch/karriere" class="btn-primary">
-          Offene Stellen ansehen
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
-
-      <div class="fade-in fade-in-delay-1">
-        <div class="awards-list">
-          <div class="award-item">
-            <span class="award-year">2025</span>
-            <div class="award-text">Amgen Switzerland &amp; Regional Hub</div>
-            <div class="award-place">🥈 2. Platz – GPTW</div>
-          </div>
-          <div class="award-item">
-            <span class="award-year">2024</span>
-            <div class="award-text">Amgen Switzerland</div>
-            <div class="award-place">🥉 3. Platz – GPTW</div>
-          </div>
-          <div class="award-item">
-            <span class="award-year">2023</span>
-            <div class="award-text">Regional Hub</div>
-            <div class="award-place">4. Platz – GPTW</div>
-          </div>
-          <div class="award-item">
-            <span class="award-year">2021</span>
-            <div class="award-text">Regional Hub</div>
-            <div class="award-place">🥈 2. Platz – GPTW</div>
-          </div>
-          <div class="award-item">
-            <span class="award-year">2020</span>
-            <div class="award-text">Amgen Switzerland</div>
-            <div class="award-place">🥈 2. Platz – GPTW</div>
-          </div>
-          <div class="award-item">
-            <span class="award-year">2019</span>
-            <div class="award-text">Amgen Switzerland</div>
-            <div class="award-place">1. Platz – GPTW 🏆</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     SOCIAL + CONTACT
-════════════════════════════════ -->
-<section class="social-section">
-  <div class="social-inner">
-    <div class="fade-in">
-      <div class="social-heading">Amgen Social Media</div>
-      <p class="social-sub">Folgen Sie uns und bleiben Sie über aktuelle Entwicklungen informiert.</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/company/amgen/" data-external="https://www.linkedin.com/company/amgen/" class="social-icon" title="LinkedIn" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="var(--blue-mid)"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="http://www.twitter.com/amgen" data-external="http://www.twitter.com/amgen" class="social-icon" title="X" aria-label="X">
-          <svg viewBox="0 0 24 24" fill="var(--blue-mid)"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 5.891zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="https://www.youtube.com/user/Amgen" data-external="https://www.youtube.com/user/Amgen" class="social-icon" title="YouTube" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" fill="var(--blue-mid)"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/amgenbiotech/" data-external="https://www.facebook.com/amgenbiotech/" class="social-icon" title="Facebook" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="var(--blue-mid)"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/amgenbiotech/" data-external="https://www.instagram.com/amgenbiotech/" class="social-icon" title="Instagram" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="var(--blue-mid)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="contact-card fade-in fade-in-delay-1">
-      <div class="contact-title">Amgen Switzerland AG</div>
-      <div class="contact-sub">Ihr direkter Draht zu uns – für alle Anfragen.</div>
-      <div class="contact-rows">
-        <div class="contact-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Suurstoffi 22, CH-6343 Rotkreuz
-        </div>
-        <div class="contact-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.18v-1.26z"/></svg>
-          +41 41 369 01 00
-        </div>
-        <div class="contact-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Adverse Event Reporting verfügbar
-        </div>
-      </div>
-      <a href="https://www.amgen.ch/Uber-Amgen/kontakt" class="btn-contact-full">Kontaktformular öffnen</a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════
-     FOOTER
-════════════════════════════════ -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo">
-          <img
-            src="https://www.amgen.ch/-/media/Themes/CorporateAffairs/Redesign/Amgen-ch/Amgen-ch/Images/logos/d-amgen-logo.svg?la=de-CH"
-            alt="Amgen"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
-          />
-          <strong style="display:none;font-size:22px;font-weight:900;color:white;">Amgen</strong>
-        </div>
-        <p class="footer-tagline">
-          Wir kämpfen gegen die schwerwiegendsten Krankheiten der Welt –
-          durch Wissenschaft, Innovation und das Engagement unserer Menschen.
-        </p>
-        <p class="footer-legal-copy">Amgen Switzerland AG · Suurstoffi 22 · CH-6343 Rotkreuz</p>
-      </div>
-
-      <div>
-        <div class="footer-col-title">Unternehmen</div>
-        <ul class="footer-links">
-          <li><a href="https://www.amgen.ch/Uber-Amgen">Über Amgen</a></li>
-          <li><a href="https://www.amgen.ch/Uber-Amgen/Unternehmensgeschichte">Unternehmensgeschichte</a></li>
-          <li><a href="https://www.amgen.ch/Uber-Amgen/Mission-und-Werte">Mission und Werte</a></li>
-          <li><a href="https://www.amgen.ch/Uber-Amgen/Management-Team">Management Team</a></li>
-          <li><a href="https://www.amgen.ch/Uber-Amgen/Transparenz">Transparenz</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="footer-col-title">Medizin &amp; Forschung</div>
-        <ul class="footer-links">
-          <li><a href="https://www.amgen.ch/Wissenschaft">Wissenschaft</a></li>
-          <li><a href="https://www.amgen.ch/Wissenschaft/biosimilars">Biosimilars</a></li>
-          <li><a href="https://www.amgen.ch/Uber-Amgen/Unsere-Medikamente">Unsere Medikamente</a></li>
-          <li><a href="https://www.amgen.ch/Therapiegebiete">Therapiegebiete</a></li>
-          <li><a href="https://www.amgen.ch/Pressematerial">Pressematerial</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="footer-col-title">Engagement</div>
-        <ul class="footer-links">
-          <li><a href="https://www.amgen.ch/Verantwortung">Verantwortung</a></li>
-          <li><a href="https://www.amgen.ch/Verantwortung/sustainability">Nachhaltigkeit</a></li>
-          <li><a href="https://www.amgen.ch/Verantwortung/Amgen-Foundation">Amgen Foundation</a></li>
-          <li><a href="https://www.amgen.ch/Verantwortung/Preise-und-Auszeichnungen">Preise &amp; Auszeichnungen</a></li>
-          <li><a href="https://www.amgen.ch/stories">Stories</a></li>
-          <li><a href="https://www.amgen.ch/karriere">Karriere</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2017–2025 Amgen Inc. All Rights Reserved. CHE-NP-1023-8003</div>
-      <div class="footer-legal-links">
-        <a href="https://www.amgen.ch/Uber-Amgen/kontakt">Kontakt</a>
-        <a href="https://www.amgen.ch/Nutzungsbedingungen">Nutzungsbedingungen</a>
-        <a href="https://www.amgen.ch/Datenschutzerklarung">Datenschutzerklärung</a>
-        <a href="https://www.amgen.eu/cookie-information-for-users#de" data-external="https://www.amgen.eu/cookie-information-for-users#de">Cookie-Erklärung</a>
-        <a href="https://www.amgen.ch/impressum">Impressum</a>
-        <a href="https://www.amgen.ch/sitemap">Seitenübersicht</a>
+    <div class="ft-bottom">
+      <span class="ft-copy">© 2017–2025 Amgen Inc. All Rights Reserved. CHE-NP-1023-8003</span>
+      <div class="ft-legal">
+        <a href="#/kontakt">Kontakt</a>
+        <a href="https://www.amgen.ch/Nutzungsbedingungen" class="ext-link">Nutzungsbedingungen</a>
+        <a href="https://www.amgen.ch/Datenschutzerklarung" class="ext-link">Datenschutz</a>
+        <a href="https://www.amgen.eu/cookie-information-for-users#de" class="ext-link">Cookie-Erklärung</a>
+        <a href="https://www.amgen.ch/impressum" class="ext-link">Impressum</a>
+        <a href="https://www.amgen.ch/sitemap" class="ext-link">Seitenübersicht</a>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- ════════════════════════════════
-     EXTERNAL LINK MODAL
-════════════════════════════════ -->
-<div id="modalOverlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal">
-    <button id="modalClose" class="modal-close" aria-label="Schliessen">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div class="modal-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-        <polyline points="15 3 21 3 21 9"/>
-        <line x1="10" y1="14" x2="21" y2="3"/>
-      </svg>
-    </div>
-    <h3 id="modalTitle">Sie verlassen amgen.ch</h3>
-    <p>
-      Indem Sie fortfahren, verlassen Sie die Unternehmensseite von Amgen Schweiz und werden
-      zu einer Internetseite Dritter weitergeleitet. Amgen Schweiz ist für den Inhalt dieser
-      Seite nicht verantwortlich und übernimmt keine Gewähr für die Richtigkeit der Informationen.
-      Sie tun dies auf eigenes Risiko.
-    </p>
-    <div class="modal-actions">
-      <a id="modalConfirm" href="#" class="btn-modal-confirm">Ja, Seite verlassen</a>
-      <button id="modalCancel" class="btn-modal-cancel">Nein, auf amgen.ch bleiben</button>
+<!-- Search Overlay -->
+<div id="search-overlay" class="overlay" aria-hidden="true">
+  <button id="search-close" class="ov-close"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <div class="search-wrap">
+    <p class="ov-label">Suche auf amgen.ch</p>
+    <form id="search-form">
+      <div class="search-row">
+        <input type="search" id="search-input" placeholder="z.B. Biosimilars, Kardiologie …" autocomplete="off">
+        <button type="submit" class="search-go"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      </div>
+    </form>
+    <div class="search-hints">
+      <span>Häufig gesucht:</span>
+      <a href="#/onkologie">Onkologie</a>
+      <a href="#/biosimilars">Biosimilars</a>
+      <a href="#/karriere">Karriere</a>
+      <a href="#/kontakt">Kontakt</a>
     </div>
   </div>
 </div>
 
-<script src="amgen-main.js"></script>
+<!-- External Link Modal -->
+<div id="ext-modal" class="modal-wrap" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-x" id="modal-cancel"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-ico"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+    <h2>Sie verlassen amgen.ch</h2>
+    <p>Sie werden zu einer externen Seite weitergeleitet. Amgen Schweiz ist nicht verantwortlich für den Inhalt dieser Seite.</p>
+    <div class="modal-btns">
+      <button id="modal-confirm" class="btn-solid">Ja, weiter</button>
+      <button id="modal-stay" class="btn-ghost-dark">Auf amgen.ch bleiben</button>
+    </div>
+  </div>
+</div>
+
+<script src="./main.js"></script>
 </body>
 </html>
